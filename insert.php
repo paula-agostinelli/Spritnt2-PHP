@@ -1,13 +1,13 @@
 <?php
 include("datebase.php");
 $name = $_POST['name'];
-$lastName = $_POST['lastName'];    
+$lastname = $_POST['lastname'];    
 $email = $_POST['email'];
 $age = $_POST['age'];   
 
-$insertQuery = "INSERT INTO users (name, last_name, email, age) VALUES ('$name', '$lastName', '$email', $age)";
+$insertQuery = "INSERT INTO users (name, lastname, email, age) VALUES ('$name', '$lastname', '$email', $age)";
 if ($connection->query($insertQuery) === TRUE) {
-    echo "usuario agregado correctamente";
+    echo "Usuario agregado correctamente.";
 } else {
     echo "Error: " . $insertQuery . "<br>" . $connection->error;
 }

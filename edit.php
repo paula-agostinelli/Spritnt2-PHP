@@ -6,7 +6,7 @@ $result = $connection->query($selectQuery);
 if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
     $name = $row['name'];
-    $lastName = $row['last_name'];
+    $lastname = $row['lastname'];
     $email = $row['email'];
     $age = $row['age'];
 } else {
@@ -33,8 +33,8 @@ $connection->close();
                 <input type="text" class="form-control" name="name" required value="<?php echo $name; ?>">
             </div>
             <div class="mb-3">
-                <label for="inputLastName" class="form-label">Apellido</label>
-                <input type="text" class="form-control" name="lastName" required value="<?php echo $lastName; ?>">
+                <label for="inputlastname" class="form-label">Apellido</label>
+                <input type="text" class="form-control" name="lastname" required value="<?php echo $lastname; ?>">
             </div>
             <div class="mb-3">
                 <label for="inputEmail" class="form-label">Correo Electronico</label>

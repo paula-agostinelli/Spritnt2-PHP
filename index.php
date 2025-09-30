@@ -31,7 +31,7 @@
                     while ($row = $result->fetch_assoc()) {
                         echo "<tr>";
                         echo "<td>" . $row['name'] . "</td>";
-                        echo "<td>" . $row['last_name'] . "</td>";
+                        echo "<td>" . $row['lastname'] . "</td>";
                         echo "<td>" . $row['email'] . "</td>";
                         echo "<td>" . $row['age'] . "</td>";
                         echo "<td>
