@@ -24,7 +24,7 @@
             </thead>
             <tbody>
                 <?php
-                include("config/datebase.php");
+                include("../config/datebase.php");
                 $selectQuery = "SELECT * FROM users";
                 $result = $connection->query($selectQuery);
                 if ($result->num_rows > 0) {

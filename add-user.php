@@ -12,7 +12,7 @@
     <div>
         <h1>Listado de usuarios</h1>
         <hr>
-        <form action="actions/insert.php" method="POST">   
+        <form action="../actions/insert.php" method="POST">   
             <div class="mb-3">
                 <label for="inputName" class="form-label">Nombre</label>
                 <input type="text" class="form-control" name="name" required>
