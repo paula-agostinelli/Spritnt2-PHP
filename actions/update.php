@@ -1,5 +1,5 @@
 <?php
-include ("datebase.php");
+include ("config/datebase.php");
 $id = $_POST['id'];
 $name = $_POST['name'];
 $lastname = $_POST['lastname'];         

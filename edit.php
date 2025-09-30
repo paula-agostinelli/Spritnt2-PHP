@@ -1,5 +1,5 @@
 <?php
-include("datebase.php");
+include("config/datebase.php");
 $id = $_GET['id'];
 $selectQuery = "SELECT * FROM users WHERE id = '$id'";
 $result = $connection->query($selectQuery);
@@ -26,14 +26,14 @@ $connection->close();
     <div>
         <h1>Editar de usuario</h1>
         <hr>
-        <form action="update.php" method="POST">
+        <form action="actions/update.php" method="POST">
             <input type="hidden" name="id" value="<?php echo $id; ?>">   
             <div class="mb-3">
                 <label for="inputName" class="form-label">Nombre</label>
                 <input type="text" class="form-control" name="name" required value="<?php echo $name; ?>">
             </div>
             <div class="mb-3">
-                <label for="inputlastname" class="form-label">Apellido</label>
+                <label for="inputLastname" class="form-label">Apellido</label>
                 <input type="text" class="form-control" name="lastname" required value="<?php echo $lastname; ?>">
             </div>
             <div class="mb-3">
