@@ -1,5 +1,5 @@
 <?php
-include("../config/datebase.php");
+include("config/datebase.php");
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
     $selectQuery = "SELECT * FROM users WHERE id = ?";
@@ -31,26 +31,26 @@ $connection->close();
 </head>
 
 <body>
-    <div>
+    <div class="bg-white p-4 m-4 rounded shadow w-75 mx-auto">
         <h1>Editar de usuario</h1>
         <hr>
         <form action="actions/update.php" method="POST">
             <input type="hidden" name="id" value="<?php echo $id; ?>">
             <div class="mb-3">
                 <label for="inputName" class="form-label">Nombre</label>
-                <input type="text" class="form-control" name="name" required value="<?php echo $name; ?>">
+                <input type="text" class="form-control" name="name" required value="<?php echo $name; ?>" placeholder="Ingrese su nombre">
             </div>
             <div class="mb-3">
                 <label for="inputLastname" class="form-label">Apellido</label>
-                <input type="text" class="form-control" name="lastname" required value="<?php echo $lastname; ?>">
+                <input type="text" class="form-control" name="lastname" required value="<?php echo $lastname; ?>" placeholder="Ingrese su apellido">
             </div>
             <div class="mb-3">
                 <label for="inputEmail" class="form-label">Correo Electronico</label>
-                <input type="email" class="form-control" name="email" required value="<?php echo $email; ?>">
+                <input type="email" class="form-control" name="email" required value="<?php echo $email; ?>" placeholder="Ingrese su correo electronico">
             </div>
             <div class="mb-3">
                 <label for="inputAge" class="form-label">Edad</label>
-                <input type="number" class="form-control" name="age" required value="<?php echo $age; ?>">
+                <input type="number" class="form-control" name="age" required value="<?php echo $age; ?>" placeholder="Ingrese su edad">
             </div>
             <button type="submit" class="btn btn-primary">Guardar</button>
             <a href="index.php" class="btn btn-secondary">Cancelar</a>

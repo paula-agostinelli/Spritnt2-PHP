@@ -23,6 +23,6 @@ if($stmt->execute()) {
 }
 $stmt->close();
 $connection->close();
-header("Location: index.php");
+header("Location: ../index.php");
 exit();
 ?>

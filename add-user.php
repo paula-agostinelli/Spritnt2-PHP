@@ -9,25 +9,25 @@
 </head>
 
 <body>
-    <div>
+    <div class="bg-white p-4 m-4 rounded shadow w-75 mx-auto">
         <h1>Listado de usuarios</h1>
         <hr>
-        <form action="../actions/insert.php" method="POST">   
+        <form action="actions/insert.php" method="POST">   
             <div class="mb-3">
                 <label for="inputName" class="form-label">Nombre</label>
-                <input type="text" class="form-control" name="name" required>
+                <input type="text" class="form-control" name="name" required placeholder="Ingrese su nombre">
             </div>
             <div class="mb-3">
                 <label for="inputLastname" class="form-label">Apellido</label>
-                <input type="text" class="form-control" name="lastname" required>
+                <input type="text" class="form-control" name="lastname" required placeholder="Ingrese su apellido">
             </div>
             <div class="mb-3">
                 <label for="inputEmail" class="form-label">Correo Electronico</label>
-                <input type="email" class="form-control" name="email" required>
+                <input type="email" class="form-control" name="email" required placeholder="Ingrese su correo electronico">
             </div>
             <div class="mb-3">
                 <label for="inputAge" class="form-label">Edad</label>
-                <input type="number" class="form-control" name="age" required>
+                <input type="number" class="form-control" name="age" required placeholder="Ingrese su edad">
             </div>
             <button type="submit" class="btn btn-primary">Guardar</button>
             <a href="index.php" class="btn btn-secondary">Cancelar</a>
